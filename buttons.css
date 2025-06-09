@@ -22,7 +22,7 @@ header {
   background: #3b4a59;
   padding: 50px 20px;
   text-align: center;
-  width: 100%; /* Full width */
+  width: 100%;
   color: #f3f1de;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ nav {
   justify-content: center;
   gap: 30px;
   font-weight: 600;
-  width: 100%; /* Full width */
+  width: 100%;
   color: #f3f1de;
 }
 
@@ -78,12 +78,12 @@ nav a:focus {
 
 section {
   max-width: 900px;
-  background: #f3f1de; /* Inverted: now light bg */
+  background: #f3f1de;
   margin: 40px auto;
   padding: 40px 50px;
   border-radius: 16px;
-  border: 1px solid #3b4a59cc; /* Border in dark grey */
-  color: #3b4a59; /* Inverted: now dark text */
+  border: 1px solid #3b4a59cc;
+  color: #3b4a59;
   position: relative;
   overflow: hidden;
   width: 900px;
@@ -92,6 +92,10 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /* Optional: to align content from left to right, line by line:
+     align-items: flex-start;
+     text-align: left;
+  */
 }
 
 section h2 {
@@ -136,6 +140,12 @@ ul {
   color: #3b4a59;
   max-width: 700px;
   text-align: left;
+
+  /* Optional: turn list into horizontal layout:
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+  */
 }
 
 ul li {
@@ -160,13 +170,15 @@ ul li::before {
 ul li:hover {
   color: #2c3844;
 }
+
 #contact .d {
-  color: #3b4a59; /* dark color for visibility on light bg */
+  color: #3b4a59;
 }
 
 #contact .d:hover {
   color: #2c3844;
 }
+
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -228,33 +240,41 @@ footer a:hover {
     padding: 30px 25px;
     width: 90%;
   }
+
   nav {
     flex-wrap: wrap;
     gap: 15px;
     width: 100%;
   }
+
   nav a {
     font-size: 1rem;
     padding: 6px 10px;
   }
+
   p {
     font-size: 1rem;
     max-width: 100%;
     text-align: justify;
   }
+
   ul li {
     font-size: 1rem;
   }
+
   .profile-pic {
     width: 140px;
     height: 140px;
   }
+
   header {
     width: 100%;
     padding: 40px 20px;
   }
+
   footer {
     width: 90%;
   }
 }
+
 
