@@ -278,3 +278,14 @@ footer a:hover {
 }
 
 
+  header {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+
